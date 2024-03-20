@@ -1,0 +1,52 @@
+@use "variables" as *;
+@use "buttons" as *;
+@use "mixins" as *;
+@use "media" as *;
+@use "functions" as *;
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  background: $gray;
+  height: 100vh;
+  position: relative;
+}
+
+.card {
+  box-sizing: border-box;
+  @include responsive(xs) {
+    background: red;
+  }
+  @include responsive(xl) {
+    background: teal;
+  }
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background: white;
+  padding: 2rem;
+  h1 {
+    color: $primary;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $gray;
+    span {
+      @include responsive(xl) {
+        background: white;
+      }
+      color: black;
+    }
+  }
+
+  .text {
+    color: #333;
+  }
+
+  ul {
+    @include inline-list;
+  }
+
+  position: absolute;
+  top: centerAbsolute(300px);
+  left: centerAbsolute(500px);
+}

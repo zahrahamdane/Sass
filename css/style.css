@@ -1,0 +1,84 @@
+.btn-default, .btn-warning, .btn-danger, .btn-primary {
+  border: 0;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  min-width: 100px;
+  background: #333;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-default:hover, .btn-warning:hover, .btn-danger:hover, .btn-primary:hover {
+  opacity: 0.5;
+}
+
+.btn-primary {
+  background: blue;
+}
+
+.btn-danger {
+  background: red;
+}
+
+.btn-warning {
+  background: orange;
+}
+
+.btn-default {
+  background: green;
+}
+
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  background: #eee;
+  height: 100vh;
+  position: relative;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background: white;
+  padding: 2rem;
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 250px);
+}
+@media only screen and (max-width: 500px) {
+  .card {
+    background: red;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .card {
+    background: teal;
+  }
+}
+.card h1 {
+  color: pink;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+.card h1 span {
+  color: black;
+}
+@media only screen and (min-width: 1000px) {
+  .card h1 span {
+    background: white;
+  }
+}
+.card .text {
+  color: #333;
+}
+.card ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */
